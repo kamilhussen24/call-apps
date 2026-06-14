@@ -44,7 +44,7 @@
             android:gravity="center" android:orientation="vertical">
             <ImageButton android:id="@+id/btnMute"
                 android:layout_width="52dp" android:layout_height="52dp"
-                android:background="@drawable/circle_gray" android:alpha="0.5f"
+                android:background="@drawable/circle_gray" android:alpha="0.5"
                 android:src="@drawable/ic_mic_off" android:padding="14dp" />
             <TextView android:id="@+id/tvMuteLabel"
                 android:layout_width="wrap_content" android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
             android:gravity="center" android:orientation="vertical">
             <ImageButton android:id="@+id/btnSpeaker"
                 android:layout_width="52dp" android:layout_height="52dp"
-                android:background="@drawable/circle_gray" android:alpha="0.5f"
+                android:background="@drawable/circle_gray" android:alpha="0.5"
                 android:src="@drawable/ic_speaker" android:padding="14dp" />
             <TextView android:id="@+id/tvSpeakerLabel"
                 android:layout_width="wrap_content" android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
             android:gravity="center" android:orientation="vertical">
             <ImageButton android:id="@+id/btnHold"
                 android:layout_width="52dp" android:layout_height="52dp"
-                android:background="@drawable/circle_gray" android:alpha="0.5f"
+                android:background="@drawable/circle_gray" android:alpha="0.5"
                 android:src="@drawable/ic_hold" android:padding="14dp" />
             <TextView android:id="@+id/tvHoldLabel"
                 android:layout_width="wrap_content" android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
             android:gravity="center" android:orientation="vertical">
             <ImageButton android:id="@+id/btnRecord"
                 android:layout_width="52dp" android:layout_height="52dp"
-                android:background="@drawable/circle_gray" android:alpha="0.5f"
+                android:background="@drawable/circle_gray" android:alpha="0.5"
                 android:src="@drawable/ic_recording" android:padding="14dp" />
             <TextView android:id="@+id/tvRecordLabel"
                 android:layout_width="wrap_content" android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
             android:gravity="center" android:orientation="vertical">
             <ImageButton android:id="@+id/btnDialpad"
                 android:layout_width="52dp" android:layout_height="52dp"
-                android:background="@drawable/circle_gray" android:alpha="0.5f"
+                android:background="@drawable/circle_gray" android:alpha="0.5"
                 android:src="@drawable/ic_dialpad" android:padding="14dp" />
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                 android:text="Dialpad" android:textColor="#CCFFFFFF" android:textSize="11sp"

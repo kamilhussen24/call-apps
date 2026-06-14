@@ -36,7 +36,7 @@
         <item name="android:insetBottom">0dp</item>
     </style>
 
-    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+    <style name="TabTextAppearance" parent="TextAppearance.MaterialComponents.Tab">
         <item name="android:textSize">11sp</item>
     </style>
 </resources>
