@@ -174,9 +174,8 @@ object SipManager {
 
     fun startRecording(filePath: String) {
         try {
-            val params = core?.currentCall?.currentParams?.copy()
-            params?.isRecording = true
-            params?.recordFile = filePath
+            core?.currentCall?.params?.recordFile = filePath
+            core?.currentCall?.startRecording()
         } catch (e: Exception) {}
     }
 

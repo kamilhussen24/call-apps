@@ -8,6 +8,8 @@ import com.kamildex.kdexcall.databinding.ItemCallLogBinding
 import com.kamildex.kdexcall.utils.CallDirection
 import com.kamildex.kdexcall.utils.CallEntry
 import com.kamildex.kdexcall.utils.CallLog
+import android.graphics.PorterDuff
+import android.graphics.PorterDuffColorFilter
 
 class CallLogAdapter(
     private val items: List<CallEntry>,
@@ -25,16 +27,15 @@ class CallLogAdapter(
             h.b.tvNumber.text = if (e.name != null) e.number else ""
             h.b.tvTime.text = "${e.time} · ${e.date}"
             h.b.tvDuration.text = if (e.duration > 0) CallLog.formatDuration(e.duration) else ""
-            h.b.ivDirection.setImageResource(when (e.direction) {
-                CallDirection.INCOMING -> R.drawable.ic_call_incoming
-                CallDirection.OUTGOING -> R.drawable.ic_call_outgoing
-                CallDirection.MISSED -> R.drawable.ic_call_missed
-            })
-            h.b.ivDirectionColor.setColorFilter(h.itemView.context.getColor(when (e.direction) {
-                CallDirection.INCOMING -> R.color.green
-                CallDirection.OUTGOING -> R.color.primary
-                CallDirection.MISSED -> R.color.red
-            }))
+            val (iconRes, colorRes) = when (e.direction) {
+                CallDirection.INCOMING -> Pair(R.drawable.ic_call_incoming, R.color.green)
+                CallDirection.OUTGOING -> Pair(R.drawable.ic_call_outgoing, R.color.primary)
+                CallDirection.MISSED -> Pair(R.drawable.ic_call_missed, R.color.red)
+            }
+            h.b.ivDirection.setImageResource(iconRes)
+            h.b.ivDirection.colorFilter = PorterDuffColorFilter(
+                h.itemView.context.getColor(colorRes), PorterDuff.Mode.SRC_IN
+            )
             h.b.btnCall.setOnClickListener { onCall(e.number) }
             if (e.recordingPath != null) {
                 h.b.ivRecording.visibility = android.view.View.VISIBLE

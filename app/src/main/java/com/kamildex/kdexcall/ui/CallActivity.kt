@@ -100,10 +100,10 @@ class CallActivity : AppCompatActivity() {
 
         // Dialpad buttons
         val dtmfMap = mapOf(
-            binding.btn0 to '0', binding.btn1 to '1', binding.btn2 to '2',
-            binding.btn3 to '3', binding.btn4 to '4', binding.btn5 to '5',
-            binding.btn6 to '6', binding.btn7 to '7', binding.btn8 to '8',
-            binding.btn9 to '9', binding.btnStar to '*', binding.btnHash to '#'
+            binding.dtmf0 to '0', binding.dtmf1 to '1', binding.dtmf2 to '2',
+            binding.dtmf3 to '3', binding.dtmf4 to '4', binding.dtmf5 to '5',
+            binding.dtmf6 to '6', binding.dtmf7 to '7', binding.dtmf8 to '8',
+            binding.dtmf9 to '9', binding.dtmfStar to '*', binding.dtmfHash to '#'
         )
         dtmfMap.forEach { (btn, digit) ->
             btn.setOnClickListener {

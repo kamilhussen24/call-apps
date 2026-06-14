@@ -121,29 +121,29 @@
 
         <GridLayout android:layout_width="210dp" android:layout_height="wrap_content"
             android:columnCount="3">
-            <com.google.android.material.button.MaterialButton android:id="@+id/btn1"
+            <com.google.android.material.button.MaterialButton android:id="@+id/dtmf1"
                 style="@style/MiniDialpadKey" android:text="1"/>
-            <com.google.android.material.button.MaterialButton android:id="@+id/btn2"
+            <com.google.android.material.button.MaterialButton android:id="@+id/dtmf2"
                 style="@style/MiniDialpadKey" android:text="2"/>
-            <com.google.android.material.button.MaterialButton android:id="@+id/btn3"
+            <com.google.android.material.button.MaterialButton android:id="@+id/dtmf3"
                 style="@style/MiniDialpadKey" android:text="3"/>
-            <com.google.android.material.button.MaterialButton android:id="@+id/btn4"
+            <com.google.android.material.button.MaterialButton android:id="@+id/dtmf4"
                 style="@style/MiniDialpadKey" android:text="4"/>
-            <com.google.android.material.button.MaterialButton android:id="@+id/btn5"
+            <com.google.android.material.button.MaterialButton android:id="@+id/dtmf5"
                 style="@style/MiniDialpadKey" android:text="5"/>
-            <com.google.android.material.button.MaterialButton android:id="@+id/btn6"
+            <com.google.android.material.button.MaterialButton android:id="@+id/dtmf6"
                 style="@style/MiniDialpadKey" android:text="6"/>
-            <com.google.android.material.button.MaterialButton android:id="@+id/btn7"
+            <com.google.android.material.button.MaterialButton android:id="@+id/dtmf7"
                 style="@style/MiniDialpadKey" android:text="7"/>
-            <com.google.android.material.button.MaterialButton android:id="@+id/btn8"
+            <com.google.android.material.button.MaterialButton android:id="@+id/dtmf8"
                 style="@style/MiniDialpadKey" android:text="8"/>
-            <com.google.android.material.button.MaterialButton android:id="@+id/btn9"
+            <com.google.android.material.button.MaterialButton android:id="@+id/dtmf9"
                 style="@style/MiniDialpadKey" android:text="9"/>
-            <com.google.android.material.button.MaterialButton android:id="@+id/btnStar"
+            <com.google.android.material.button.MaterialButton android:id="@+id/dtmfStar"
                 style="@style/MiniDialpadKey" android:text="*"/>
-            <com.google.android.material.button.MaterialButton android:id="@+id/btn0"
+            <com.google.android.material.button.MaterialButton android:id="@+id/dtmf0"
                 style="@style/MiniDialpadKey" android:text="0"/>
-            <com.google.android.material.button.MaterialButton android:id="@+id/btnHash"
+            <com.google.android.material.button.MaterialButton android:id="@+id/dtmfHash"
                 style="@style/MiniDialpadKey" android:text="#"/>
         </GridLayout>
     </LinearLayout>

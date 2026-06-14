@@ -22,7 +22,7 @@
         <ImageButton android:id="@+id/btnBackspace"
             android:layout_width="48dp" android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/ic_dialpad" android:padding="12dp" />
+            android:src="@drawable/ic_call_end" android:padding="12dp" />
     </LinearLayout>
 
     <!-- Dialpad Grid -->
