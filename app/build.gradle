@@ -62,5 +62,5 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
 
     // Linphone SDK — SIP library
-    implementation 'org.linphone:linphone-sdk-android:5.2.67'
+    implementation 'org.linphone:linphone-sdk-android:5.3.77'
 }

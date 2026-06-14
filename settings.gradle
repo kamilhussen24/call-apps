@@ -6,8 +6,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://linphone.org/maven_repository' }
-        maven { url 'https://jitpack.io' }
+        maven { url 'https://download.linphone.org/maven_repository' }
     }
 }
 rootProject.name = "KDexCall"
