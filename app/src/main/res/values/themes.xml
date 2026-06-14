@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.KDexCall" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.KDexCall.Call" parent="Theme.KDexCall">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="DialpadKey" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">@color/primary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">40dp</item>
+    </style>
+
+    <style name="MiniDialpadKey" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+</resources>

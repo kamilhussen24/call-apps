@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <View android:layout_width="match_parent" android:layout_height="48dp" />
+
+            <!-- Logo -->
+            <ImageView
+                android:layout_width="80dp" android:layout_height="80dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="KDex Call"
+                android:textSize="28sp" android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Connect your SIP account"
+                android:textSize="14sp" android:textColor="@color/text_secondary"
+                android:layout_marginBottom="36dp" />
+
+            <!-- Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/surface" app:cardCornerRadius="16dp"
+                app:cardElevation="0dp" app:strokeColor="@color/stroke" app:strokeWidth="1dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="SIP Account" android:textColor="@color/text_primary"
+                        android:textSize="13sp" android:textStyle="bold"
+                        android:layout_marginBottom="14dp" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Username" android:textColor="@color/text_secondary"
+                        android:textSize="12sp" android:layout_marginBottom="4dp" />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        app:boxCornerRadiusBottomEnd="10dp" app:boxCornerRadiusBottomStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp" app:boxCornerRadiusTopStart="10dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etUsername"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:hint="your_username" android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Password" android:textColor="@color/text_secondary"
+                        android:textSize="12sp" android:layout_marginBottom="4dp" />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        app:boxCornerRadiusBottomEnd="10dp" app:boxCornerRadiusBottomStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp" app:boxCornerRadiusTopStart="10dp"
+                        app:passwordToggleEnabled="true">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPassword"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:hint="password" android:inputType="textPassword" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Server / Domain" android:textColor="@color/text_secondary"
+                        android:textSize="12sp" android:layout_marginBottom="4dp" />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        app:boxCornerRadiusBottomEnd="10dp" app:boxCornerRadiusBottomStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp" app:boxCornerRadiusTopStart="10dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etDomain"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:hint="sip.example.com" android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Port" android:textColor="@color/text_secondary"
+                        android:textSize="12sp" android:layout_marginBottom="4dp" />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        app:boxCornerRadiusBottomEnd="10dp" app:boxCornerRadiusBottomStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp" app:boxCornerRadiusTopStart="10dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPort"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:hint="5060" android:inputType="number" android:text="5060" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Transport" android:textColor="@color/text_secondary"
+                        android:textSize="12sp" android:layout_marginBottom="8dp" />
+
+                    <RadioGroup android:id="@+id/rgTransport"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton android:id="@+id/rbUdp" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="UDP" android:checked="true"
+                            android:layout_marginEnd="16dp" />
+                        <RadioButton android:id="@+id/rbTcp" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="TCP"
+                            android:layout_marginEnd="16dp" />
+                        <RadioButton android:id="@+id/rbTls" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="TLS" />
+                    </RadioGroup>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <ProgressBar android:id="@+id/progressBar"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:visibility="gone" android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnConnect"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:insetTop="0dp" android:insetBottom="0dp"
+                android:text="Connect" android:textSize="15sp" app:cornerRadius="14dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

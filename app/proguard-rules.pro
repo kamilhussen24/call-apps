@@ -1,0 +1,4 @@
+-dontwarn kotlin.**
+-keep class kotlin.** { *; }
+-dontwarn org.linphone.**
+-keep class org.linphone.** { *; }
